@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuutureTech Partners</title>
+</head>
+<body>
+    <section>
+       
+        <html>
+        <head>
+            <title>Bulletin de notes</title>
+            <style>
+                 /*Style pour l'entet*/
+            header{
+                padding-bottom: 30px;
+            }
+            .ong{
+                color: #000;
+                font-size: larger;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+            .ong:hover{
+                color: #F1828D;
+            }
+            nav{
+                margin-left: 500px;
+                margin-right: 100px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-top: 40px ;
+                justify-content: space-around;
+            }
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                th, td {
+                    text-align: center;
+                    padding: 8px;
+                    border: 1px solid black;
+                }
+                th {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+                .resaux{
+                position: fixed;
+                right: 10px;
+                top: 300µpx;
+            
+            }
+
+            aside{
+                padding-left: 5%;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                background-color: #eec4c4;
+            }
+
+            /*Style pour le pied de page*/
+            footer{
+                text-align: center;
+                background-color: #e4d8cf;
+                padding-top: 50px;
+                padding-bottom: 30px;
+            }
+            #mail{
+                text-decoration: none;
+                width: 200px;
+                height: 20px;
+                border-bottom: 2px solid rgb(245, 122, 40);
+                border-left: 2px solid white;
+                border-right: 2px solid white;
+                border-top: 2px solid white;
+            }
+            #send{
+                padding: 10px;
+                background-color: #4E2E54;
+                color: white;
+                font-size: large;
+            }
+            #send:hover{
+                box-shadow: 3px 3px black;
+            }
+            </style>
+        </head>
+        <header>
+            <a href="index.html"><img src="pict/logo.png" alt="logo" width="200" height="90" style="position: fixed; top: 0; left: 0;"></a>
+            <nav>
+                <a href="index.html" class="ong">Accueil</a>
+                <a href="choisir.html" class="ong">Nous choisir</a>
+                <a href="service.html" class="ong">Nos services</a>
+                <a href="bulletin.html" class="ong">Bulletin</a>
+            </nav>
+        </header>
+        <body>
+            <h1 style="text-align: center; text-decoration: underline;">Bulletin de notes</h1>
+            <form action="traitement.php" method="post">
+            <table>
+                <caption style="font-size: larger;">SEMESTRE 1</caption>
+                <thead>
+                    <tr>
+                        <th>UE</th>
+                        <th>ECUE </th>
+                        <th>Credit par ECUE</th>
+                        <th>Controle Continu</th>
+                        <th>Controle Terminal</th>
+                        <th>Moyenne ECUE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">UE Analyse I</td>
+                        <td>Ensemble des réels</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc1" id="nc1"></td>
+                        <td><input type="number" name="nt1" id="nt1"></td>
+                        <td><output type="number" name="moy1" id="moy1"></td>
+                    </tr>
+                    <tr>
+                        <td>Fonction réelle à variable réelle</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc2" id="nc2"></td>
+                        <td><input type="number" name="nt2" id="nt2"></td>
+                        <td><output id="moy2"></td>
+                    </tr>
+                    <tr>
+                        <td>Calcul intégral et Equation différentielle</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc3" id="nc3"></td>
+                        <td><input type="number" name="nt3" id="nt3"></td>
+                        <td><output type="number" id="moy3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">UE Algèbre</td>
+                        <td>Algèbre Fondamental</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc4" id="nc4"></td>
+                        <td><input type="number" name="nt4" id="nt4"></td>
+                        <td><output id="moy4"></td>
+                    </tr>
+                    <tr>
+                        <td>Algèbre Linéaire</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc5" id="nc5"></td>
+                        <td><input type="number" name="nt5" id="nt5"></td>
+                        <td><output id="moy5"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">UE Algorithmique et Structure de données</td>
+                        <td>Algorithmique de Base</td>
+                        <td>3</td>
+                        <td><input type="number" name="nc6" id="nc6"></td>
+                        <td><input type="number" name="nt6" id="nt6"></td>
+                        <td><output id="moy6"></td>
+                    </tr>
+                    <tr>
+                        <td>Structure de données</td>
+                        <td>3</td>
+                        <td><input type="number" name="nc7" id="nc7"></td>
+                        <td><input type="number" name="nt7" id="nt7"></td>
+                        <td><output id="moy7"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">UE Langages de programmation</td>
+                        <td>Langage C</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc8" id="nc8"></td>
+                        <td><input type="number" name="nt8" id="nt8"></td>
+                        <td><output id="moy8"></td>
+                    </tr>
+                    <tr>
+                        <td>Outil bureautique</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc9" id="nc9"></td>
+                        <td><input type="number" name="nt9" id="nt9"></td>
+                        <td><output id="moy9"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">UE Electronique et informatique</td>
+                        <td>Architecture matérielle des ordinateurs</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc10" id="nc10"></td>
+                        <td><input type="number" name="nt10" id="nt10"></td>
+                        <td><output id="moy10"></td>
+                    </tr>
+                    <tr>
+                        <td>Electricité Général</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc11" id="nc11"></td>
+                        <td><input type="number" name="nt11" id="nt11"></td>
+                        <td><output id="moy11"></td>
+                    </tr>
+                    <tr>
+                        <td>Electronique Analogique</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc12" id="nc12"></td>
+                        <td><input type="number" name="nt12" id="nt12"></td>
+                        <td><output id="moy12"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">UE Langage et Communication</td>
+                        <td>Techniques d'expressions écrites et orales</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc13" id="nc13"></td>
+                        <td><input type="number" name="nt13" id="nt13"></td>
+                        <td><output id="moy13"></td>
+                    </tr>
+                    <tr>
+                        <td>Anglais Général</td>
+                        <td>2</td>
+                        <td><input type="number" name="nc14" id="nc14"></td>
+                        <td><input type="number" name="nt14" id="nt14"></td>
+                        <td><output id="moy14"></td>
+                    </tr>
+                </tbody>
+            </table>
+<br><br>
+            <table style="width: 500px; margin-left: 50%;">
+                <caption>Résultats</caption>
+                <tr>
+                    <th>UE</th>
+                    <th>Moyenne UE </th>
+                    
+                </tr>
+                <tr>
+                    <th>Analyse I</th>
+                    <td><output name="A1"  id="A1"></td>
+                   
+                </tr>
+                <tr>
+                    <th>Algèbre</th>
+                    <td><output name="A2" id="A2"></td>
+                    
+                </tr>
+                <tr>
+                    <th>Algorithmique et structure de données</th>
+                    <td><output name="A3" id="A3"></td>
+                   
+                </tr>
+                <tr>
+                    <th>Langage de programmation</th>
+                    <td><output name="A4" id="A4"></td>
+                    
+                </tr>
+                <tr>
+                    <th>Electronique et informatique</th>
+                    <td><output name="A5" id="A5"></td>
+                    
+                </tr>
+                <tr>
+                    <th>Langage et communication</th>
+                    <td><output name="A6" id="A6"></td>
+                   
+                </tr>
+                <tr> 
+                    <th>Moyenne Semestre1</th>
+                    <td><output name="MS" id="MS"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2"> <input type="button" value="CALCULER" onclick="calculer();"></td>
+                </tr>
+            </table>
+            <br><br>
+           
+        </form>
+    </article>
+    <aside>
+        <img src="pict/logo.png" alt="logoentreprise" class="logo" style="margin-right:20%; width: 150px; height: 60px;">
+        <div style="margin-right: 20%;">
+            <p style="max-width: 50px;"><a href="index.html" class="ong">Accueil</a></p><br>
+            <p style="max-width: 50px;"><a href="choisir.html"  class="ong">Nouschoisir</a></p><br>
+            <p style="max-width: 50px;"><a href="#" class="ong">Apropos</a></p>
+        </div>
+        <div style="margin-right:20%;"><br>
+            <a href="#" class="ong">Instagram</a><br><br><br>
+            <a href="#" class="ong">Facebook</a><br><br><br>
+            <a href="#" class="ong">Whatsapp</a>
+        </div>
+        <div>
+            <h2> CONTACT</h2>
+            e-mail*
+            <input type="email" name="mail" id="mail"><br><br>
+            Message* <br>
+            <textarea name="mess" id="mess" cols="15" rows="3"></textarea><br><br>
+            <input type="submit" value="Envoyer" id="send">
+        </div>
+    </aside>
+     </section>
+     <div class="resaux">
+        <p><a href="#"><img src="pict/iconfacebook.png" alt="facebook" width="40px" height="40px" style="border-radius: 50%;" ></a></p>
+        <p><a href="#"><img src="pict/iconinsta.png" alt="instagram" width="40px" height="40px" style="border-radius: 50%;"></a></p>
+        <p><a href="#"><img src="pict/iconwhatsapp (1).jpg" alt="Whatsapp" width="40px" height="40px" style="border-radius: 50%;"></a></p>
+    </div>
+    <footer>
+        <a href="#" style="text-decoration: none; color: black; margin-right: 40px;">Mention légales</a> 
+        <a href="#"  style="text-decoration: none; color: black; margin-right: 40px;">Politique de confidentialité</a>
+        <a href="#"  style="text-decoration: none; color: black;">conditions d'utilisations</a>
+        <p><br>
+            Wealthgenixxinnovation©2024 Bénin
+        </p>
+    </footer>
+     <script type="text/JavaScript">
+        function calculer()
+        {
+            //Moyenne par ECUE
+            document.getElementById("moy1").value = (document.getElementById("nc1").value*0.4) + (document.getElementById("nt1").value*0.6);
+            document.getElementById("moy2").value = (document.getElementById("nc2").value*0.4) + (document.getElementById("nt2").value*0.6);
+            document.getElementById("moy3").value = (document.getElementById("nc3").value*0.4) + (document.getElementById("nt3").value*0.6);
+            document.getElementById("moy4").value = (document.getElementById("nc4").value*0.4) + (document.getElementById("nt4").value*0.6);
+            document.getElementById("moy5").value = (document.getElementById("nc5").value*0.4) + (document.getElementById("nt5").value*0.6);
+            document.getElementById("moy6").value = (document.getElementById("nc6").value*0.4) + (document.getElementById("nt6").value*0.6);
+            document.getElementById("moy7").value = (document.getElementById("nc7").value*0.4) + (document.getElementById("nt7").value*0.6);
+            document.getElementById("moy8").value = (document.getElementById("nc8").value*0.4) + (document.getElementById("nt8").value*0.6);
+            document.getElementById("moy9").value = (document.getElementById("nc9").value*0.4) + (document.getElementById("nt9").value*0.6);
+            document.getElementById("moy10").value = (document.getElementById("nc10").value*0.4) + (document.getElementById("nt10").value*0.6);
+            document.getElementById("moy11").value = (document.getElementById("nc11").value*0.4) + (document.getElementById("nt11").value*0.6);
+            document.getElementById("moy12").value = (document.getElementById("nc12").value*0.4) + (document.getElementById("nt12").value*0.6);
+            document.getElementById("moy13").value = (document.getElementById("nc13").value*0.4) + (document.getElementById("nt13").value*0.6);
+            document.getElementById("moy14").value = (document.getElementById("nc14").value*0.4) + (document.getElementById("nt14").value*0.6);
+            
+            //Moyenne par UE
+            document.getElementById("A1").value = ((document.getElementById("moy1").value*1) + (document.getElementById("moy2").value*1)+(document.getElementById("moy3").value*1))/3;
+            document.getElementById("A2").value = ((document.getElementById("moy4").value*1) + (document.getElementById("moy5").value*1))/2;
+            document.getElementById("A3").value = ((document.getElementById("moy6").value*1) + (document.getElementById("moy7").value*1))/2;
+            document.getElementById("A4").value = ((document.getElementById("moy8").value*1) + (document.getElementById("moy9").value*1))/2;
+            document.getElementById("A5").value = ((document.getElementById("moy10").value*1) + (document.getElementById("moy11").value*1)+(document.getElementById("moy12").value*1))/6;
+            document.getElementById("A6").value = ((document.getElementById("moy13").value*1) + (document.getElementById("moy14").value*1))/2;
+
+            //Moyenne Semestre
+            document.getElementById("MS").value = ((document.getElementById("A1").value) + (document.getElementById("A2").value) + (document.getElementById("A3").value) + (document.getElementById("A4").value) + (document.getElementById("A5").value) + (document.getElementById("A6").value))/6;
+        
+        }
+
+     </script>
+</body>
+
+</body>
+</html>

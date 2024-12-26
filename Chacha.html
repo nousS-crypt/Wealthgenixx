@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html>
+    <head>
+        <title> Quelques exercices sur Html et Css</title>
+        <meta charset="utf-8">
+        <style>table{border-collapse: collapse; 
+            color: rgb(10, 10, 10);
+        }
+        th,td{border: 1px solid #020202;padding: 5px;}
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            color: rgb(170, 27, 27);
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: smaller ;
+        }
+        th{
+            color:rgb(103, 30, 30) ;
+        }
+        tr{
+            color:rgb(10, 10, 10) ;}
+            header{
+                padding-bottom: 30px;
+            }
+            .ong{
+                color: #000;
+                font-size: larger;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+            .ong:hover{
+                color: #F1828D;
+            }
+            nav{
+                margin-left: 500px;
+                margin-right: 100px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-top: 40px ;
+                justify-content: space-around;
+            }
+            /*Style pour les section*/
+            section{
+                background-image: url("pict/bgacc.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+                padding-top: 25%;
+                padding-bottom: 20px;
+            }
+            .reception{
+                width: 500px;
+                height: 400px;
+                background-color: #FEFAD4;
+                padding-left: 10px;
+                margin-left: 50%;
+                padding-bottom: 10px;
+                
+            }
+            .sousrecep{
+                
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .sev{
+                background-color:#8FB9A8 ;
+                padding-bottom: 20px;
+                padding-left: 220px;
+                padding-right: 60px;
+            }
+        
+            .offer{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 40px;
+                justify-content: space-around;
+            }
+        
+            .S1{
+                width: 250px;
+                height: 375px;
+                background-color: #FCD0BA;
+                box-shadow: 10px 10px rgb(39, 37, 37);
+                padding: 15px;
+                border-radius: 20px;
+            }
+            h2{
+                font-size: xx-large;
+            }
+            aside{
+                padding-left: 5%;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .resaux{
+                position: fixed;
+                right: 10px;
+                top: 300px;
+            
+            }
+            aside{
+                padding-left: 5%;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                background-color: #eec4c4;
+            }
+
+            /*Style pour le pied de page*/
+            footer{
+                text-align: center;
+                background-color: #e4d8cf;
+                padding-top: 50px;
+                padding-bottom: 30px;
+            }
+            #mail{
+                text-decoration: none;
+                width: 200px;
+                height: 20px;
+                border-bottom: 2px solid rgb(245, 122, 40);
+                border-left: 2px solid white;
+                border-right: 2px solid white;
+                border-top: 2px solid white;
+            }
+            #send{
+                padding: 10px;
+                background-color: #4E2E54;
+                color: white;
+                font-size: large;
+            }
+            #send:hover{
+                box-shadow: 3px 3px black;
+            }
+            
+        </style>
+        
+    </head> 
+    <header>
+        <a href="index.html"><img src="pict/logo.png" alt="logo" width="200" height="90" style="position: fixed; top: 0; left: 0;"></a>
+        <nav>
+            <a href="index.html" class="ong">Accueil</a>
+            <a href="choisir.html" class="ong">Nous choisir</a>
+            <a href="service.html" class="ong">Nos services</a>
+            <a href="bulletin.html" class="ong">Bulletin</a>
+        </nav>
+    </header>   
+    <body> 
+        <fieldset>
+            <legend><h1> Biographie de Chalome</h1></legend>
+        <p>MEGNIGBETO Chalome est une experte en cyber sécurité chevronnée titulaire de plusieures diplomes dans le domaine de la sécurité informatique. Elle détient un diplome de premier cycle en informatique avec une spécialisation en Sécurité des Systèmes, ainsi qu'une Maitrise en cyber sécurité de l'université de renom. De plus Chalome a obtenu un certificat de cryptographie et sécurité des communications.</p>
+        <p>Fortement engagée dans le domaine de la cyber sécurité, Chalome a accumulée plusieurs années d'expériences en travaillant pour diverses entreprises technologique de premier plan. Elle a développée et mis en oeuvre des stratégies de sécurités innovantes pour protégé des infrastructures critiques croissantes.</p>
+        <p> Actuellement, Chalome est associée dans l'entreprise "Wealthgenixxinnovation©2024" spécialisée dans le domaine informatique, elle supervise une équipe dédiée à la protection des données et des systèmes contre les cyber attaques. En plus de ses responsabilités professionnelles, elle est une conférencière respectée et contributrice régulière à des publications spécialisés sur la cyber sécurité.</p> 
+        <p>Email:<a href="mailto:fannellemegnigbeto@gmail.com">fannellemegnigbeto@gmail.com</a></p>
+        <p>Contact:<a href="https://wa.me/+22995810384">+22995810384</a></p>
+    </fieldset>
+
+
+        <caption><h1>Emploi du temps Chalome</h1> </caption><br>
+        <table>
+             <tr>
+                <th>Horaire</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+                <th>Dimanche</th>
+            </tr>
+            <tr>
+                <td>5h-6h</td>
+                <td>Prière<br> ménage</td>
+                <td>Prière <br> ménage</td>
+                <td>Prière<br> ménage</td>
+                <td>Prière <br> ménage</td>
+                <td>Prière <br> ménage</td>
+                <td>Prière <br>ménage</td>
+                <td>Prière <br> ménage<br>Eglise<br></td>
+            </tr>
+            <tr>
+                <td>6h-8h</td>
+                <td>Sport</td>
+                <td>Sport</td>
+                <td>Sport</td>
+                <td>Sport</td>
+                <td>Sport</td>
+                <td>Sport</td>
+                <td>Sport</td>
+                
+
+            </tr>
+            <tr>
+                <td>8h-9h</td>
+                <td>Réunion d'équipes</td>
+                <td>surveillance des indicateurs de compromission </td>
+                <td>Audit des systèmes existants pour identifier les failles de sécurité</td>
+                <td>Réunion avec les équipes de développement pour s'assurer de la prise en compte des mesures de sécurité</td>
+                <td>Révision des politiques de sécurité et des protocoles d'accès à distance</td>
+                <td>Temps consacrer à des taches de maintenance</td>
+                <td>Eglise</td>
+
+            </tr>
+            <tr>
+                <td>9h-12h</td>
+                <td>Analyse des journaux de serveur</td>
+                <td>Examen des résultats des tests d'intrusions</td>
+                <td>Evaluation de la sécurité des réseaux locaux</td>
+                <td>Participation à des conférences et à des ateliers sur la sécurité informatique</td>
+                <td>Analyse des rapports de conformité aux normes de sécurité</td>
+                <td>Réunion avec les autres associés</td>
+                <td>Sortie entre potes</td>
+
+            </tr>
+            <tr>
+                <td>12h-13h</td>
+                <td>Pause déjeuner</td>
+                <td>Pause déjeuner</td>
+                <td>Pause déjeuner</td>
+                <td>Pause déjeuner</td>
+                <td>Pause déjeuner</td>
+                <td>Pause déjeuner</td>
+                <td>Vérification des mails</td>
+                
+                
+
+            </tr>
+            <tr>
+                <td>13h-17h</td>
+                <td>Analyse des données de sécurité pour identifier les failles potentielles</td>
+                <td>Analyse des attaques de phishing reçus</td>
+                <td>Audit de sécurité des systèmes et des applications informatiques</td>
+                <td>Formation en ligne sur les dernières tendances en matière de sécurité </td>
+                <td>Réunion avec les équipes de développement pour discuter des meilleures pratiques en matière de sécurité</td>
+                <td>Evaluation des fournisseurs de sécurité</td>
+                <td>Visite en Famille</td>
+
+            </tr>
+            <tr>
+                <td>17h-20h</td>
+                <td>Sensibilisation des employés aux risques de sécurité informatique</td>
+                <td>Révision des mesures de protection des données </td>
+                <td>Stuivie des incidents de sécurité en cours</td>
+                <td>Travail sur les projets spéciaux de sécurité informatique</td>
+                <td>Rédaction de projet commercial et de présentation des clients potentiels</td>
+                <td>Autoformation sur la sécurité à domicile</td>
+                <td>Planification de la semaine suivante</td>
+
+            </tr>
+            <tr>
+                <td>20h-23h</td>
+                <td>Soirés Film</td>
+                
+                <td>Soirée Mangas</td>
+                <td>Soirée Film</td>
+                <td>Soirée Film</td>
+                <td>Soirée Mangas</td>
+                <td>Soirée Film</td>
+                <td>Soirée Mangas</td>
+        
+
+            </tr>
+            <tr>
+                <td>23h-6h</td>
+                <td>Fin de la journée</td>
+                <td>Fin de la journée</td>
+                <td>Fin de la journée</td>
+                <td>Fin de la journée</td>
+                <td>Fin de la journée</td>
+                <td>Fin de la journée</td>
+                <td>Fin de la journée</td>
+        
+        
+
+            </tr>
+        </table><br><br>
+        <aside>
+            <img src="pict/logo.png" alt="logoentreprise" class="logo" style="margin-right:20%; width: 150px; height: 60px;">
+            <div style="margin-right: 20%;">
+                <p style="max-width: 50px;"><a href="index.html" class="ong">Accueil</a></p><br>
+                <p style="max-width: 50px;"><a href="choisir.html"  class="ong">Nouschoisir</a></p><br>
+                <p style="max-width: 50px;"><a href="#" class="ong">Apropos</a></p>
+            </div>
+            <div style="margin-right:20%;"><br>
+                <a href="#" class="ong">Instagram</a><br><br><br>
+                <a href="#" class="ong">Facebook</a><br><br><br>
+                <a href="#" class="ong">Whatsapp</a>
+            </div>
+            <div>
+                <h2> CONTACT</h2>
+                e-mail*
+                <input type="email" name="mail" id="mail"><br><br>
+                Message* <br>
+                <textarea name="mess" id="mess" cols="15" rows="3"></textarea><br><br>
+                <input type="submit" value="Envoyer" id="send">
+            </div>
+        </aside>
+
+    </body>
+    <footer>
+        <a href="#" style="text-decoration: none; color: black; margin-right: 40px;">Mention légales</a> 
+        <a href="#"  style="text-decoration: none; color: black; margin-right: 40px;">Politique de confidentialité</a>
+        <a href="#"  style="text-decoration: none; color: black;">conditions d'utilisations</a>
+        <p><br>
+            Wealthgenixxinnovation©2024 Bénin
+        </p>
+    </footer>
+        
+        
+
+            
+        
+    
+</html>

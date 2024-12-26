@@ -1,0 +1,225 @@
+header{
+    padding-bottom: 30px;
+}
+.ong3{
+    color: #F1828D;
+    font-size: larger;
+    text-decoration:none;
+    margin-right: 20px;
+}
+.ong1,.ong2,.ong4{
+    color: #000;
+    font-size:larger;
+    text-decoration:none;
+    margin-right: 20px;
+}
+.ong1:hover,.ong2:hover,.ong4:hover{
+    color: #F1828D;
+}
+nav{
+    margin-left: 500px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 40px ;
+    justify-content: space-around;
+}
+.intro-service{
+    background-color:#8FB9A8;
+    display:flex;
+}
+.intro-service p{
+    margin-top:50px;
+    margin-left:9%;
+    margin-right:9%;
+    font-size:20px;
+    height:250px;
+    border-radius:5px;
+    padding:1%;
+    color:aliceblue;
+    border:1px dashed aliceblue;
+}
+h1{
+    margin-left:25%;
+}
+.backend-dev{
+    border-radius:2px;
+    background-color:#8FB9AB;
+    height:620px;
+    margin:2%;
+}
+.backend-dev img{   
+    object-fit:cover;
+    height:200px;
+    width:100%;
+}
+.backend-dev h1{
+    font-size:30px;
+    position:relative;
+    bottom:20%;
+    color:aliceblue;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.element-backend{
+    display:flex;
+    margin-left:4%;
+    font-size:20px; 
+    color:aliceblue;
+    position:relative;
+    bottom:10%;
+    width:1100px;
+}
+.element-backend img{
+    object-fit:cover;
+    width:200%;
+    height:350px;
+}
+.element-backend p{
+    margin:3%;
+    border: 2px dotted aliceblue;
+    padding:2%;
+}
+.front-end{
+    height:650px;
+    margin:2%;
+    border-radius:2px;
+    background-color:#FCD0BA;
+}
+.front-end img{
+    object-fit:cover;
+    width:1198px;
+    height:200px;
+}
+.front-end h1{
+    font-size:30px;
+    position:relative;
+    bottom:20%;
+    color:black;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.element-frontend img{
+    object-fit:cover;
+    width:600px;
+    height:300px;
+}
+.element-frontend{
+    display:flex;
+    font-size:20px;
+    margin:3%;
+}
+.element-frontend p{
+    margin-left:3%;
+    border: 3px dashed white;
+    border-radius:5px;
+    margin-bottom:10%;
+    padding:2%;
+}
+.front-ajout{
+    font-size:20px;
+    position:relative;
+    bottom:10%;
+    padding:3%;
+}
+.dev{
+    height:630px;
+    margin:2%;
+    border-radius:2px;
+    background-color:#FCD0BA;
+}
+.dev img{
+    object-fit:cover;
+    width:1198px;
+    height:200px;
+}
+.dev h1{
+    margin-left:34%;
+    font-size:30px;
+    position:relative;
+    bottom:20%;
+    color:aliceblue;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.element-dev img{
+    object-fit:cover;
+    width:600px;
+    height:300px;
+}
+.element-dev{
+    display:flex;
+    font-size:20px;
+    margin:3%;
+}
+.element-dev p{
+    margin-left:3%;
+    margin-right:3%;
+    border: 3px dashed aliceblue;
+    border-radius:5px;
+    margin-bottom:10%;
+    padding:2%;
+}
+.autre{
+    display:grid;
+    grid-template-columns:350px 350px 350px;
+    grid-template-rows:400px;
+    justify-content:space-between;
+    margin:5%;
+    margin-top:10%;
+}
+.autre div{
+    background-color:#765D69;
+    
+}
+.secu{
+    background-image:url(pict/Data_Protection.png);
+    background-size: cover;
+    background-position:center;
+}
+.assistance{
+    background-image:url(pict/assistant.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.consulting{
+    background-image:url(pict/consulting.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.autre p{
+    background-color:#765D69;
+    margin-top:34%;
+    height:200px;
+    padding:4%;
+    color:aliceblue;
+    font-size:17px;
+}
+.autre h1{
+    margin-right:5%;
+    color:white;
+}
+.formulaire p{
+    background-color:#fcd0ba;
+    margin:5%;
+    font-size:18px;
+    height:90px;
+    padding:2%;
+}
+.bouton-formulaire{
+    display: inline-block;
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+  margin-left:40%;
+  margin-bottom:3%;
+  text-decoration:none;
+}
+
+
+/*Style pour le pied de page*/
+footer{
+    text-align: center;
+    background-color: #e4d8cf;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
